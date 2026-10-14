@@ -4,7 +4,6 @@
 !.env.example
 
 # Private configuration
-config/config.php
 config/secrets.php
 
 # Dependencies
