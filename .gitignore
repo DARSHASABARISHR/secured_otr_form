@@ -1,0 +1,20 @@
+# Secrets and environment files
+.env
+.env.*
+!.env.example
+
+# Private configuration
+config/config.php
+config/secrets.php
+
+# Dependencies
+/vendor/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE and operating system files
+.vscode/
+.DS_Store
+Thumbs.db

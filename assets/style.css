@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+    --ink: #14233b;
+    --muted: #64748b;
+    --line: #dfe6f0;
+    --blue: #3158e8;
+    --green: #087f5b;
+    --red: #b42318
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at 10% 10%, #e6edff, transparent 35%), #f4f7fb;
+    color: var(--ink);
+    font-family: 'DM Sans', Arial, sans-serif;
+    min-height: 100vh
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none
+}
+
+.hero {
+    max-width: 900px;
+    margin: auto;
+    padding: 12vh 28px 60px
+}
+
+.brand {
+    font: 800 18px Manrope, sans-serif;
+    letter-spacing: .12em
+}
+
+.brand span,
+.hero h1 span {
+    color: var(--blue)
+}
+
+.eyebrow {
+    margin-top: 76px;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .18em
+}
+
+.hero h1 {
+    font: 800 clamp(48px, 8vw, 78px)/1.04 Manrope, sans-serif;
+    letter-spacing: -.06em;
+    margin: 18px 0
+}
+
+.lead {
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 470px;
+    line-height: 1.6
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 32px
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 12px;
+    padding: 13px 18px;
+    font: 700 14px 'DM Sans', sans-serif;
+    cursor: pointer
+}
+
+.primary {
+    background: var(--blue);
+    color: white
+}
+
+.secondary {
+    background: #e9eeff;
+    color: #2444bf
+}
+
+.full {
+    width: 100%;
+    margin-top: 12px
+}
+
+.small {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 22px
+}
+
+.page {
+    width: min(100% - 28px, 660px);
+    margin: 28px auto 60px
+}
+
+.back {
+    display: inline-block;
+    margin: 0 0 18px;
+    font-weight: 700
+}
+
+.card {
+    background: white;
+    border: 1px solid #e5eaf2;
+    border-radius: 24px;
+    padding: clamp(22px, 5vw, 40px);
+    box-shadow: 0 24px 70px #1d31500d
+}
+
+.narrow {
+    max-width: 520px;
+    margin: auto
+}
+
+.card h1 {
+    font: 800 32px Manrope, sans-serif;
+    letter-spacing: -.04em
+}
+
+.muted {
+    color: var(--muted)
+}
+
+form {
+    margin-top: 24px
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 15px 0 8px
+}
+
+input,
+select {
+    display: block;
+    width: 100%;
+    margin-top: 7px;
+    padding: 13px 14px;
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: white;
+    font: 500 15px 'DM Sans', sans-serif
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #cbd5ff
+}
+
+.otpbox {
+    padding: 15px;
+    margin: 12px 0;
+    border: 1px dashed #cad5eb;
+    border-radius: 14px;
+    background: #f8faff
+}
+
+.timer {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.verify-state {
+    display: block;
+    font-size: 13px;
+    margin-top: 8px;
+    color: var(--green);
+    font-weight: 700
+}
+
+.demo-otp {
+    padding: 12px;
+    border-radius: 10px;
+    background: #fff4d6;
+    color: #754d00;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.5
+}
+
+.notice {
+    display: none;
+    padding: 12px 14px;
+    border-radius: 11px;
+    margin: 14px 0;
+    font-size: 13px
+}
+
+.notice.show {
+    display: block
+}
+
+.notice.error {
+    background: #fff0ef;
+    color: var(--red)
+}
+
+.notice.success {
+    background: #e9fbf3;
+    color: var(--green)
+}
+
+.textbtn {
+    border: 0;
+    background: transparent;
+    color: var(--blue);
+    font-weight: 700;
+    cursor: pointer;
+    padding: 10px 0
+}
+
+.textbtn:disabled {
+    color: #a0a9ba;
+    cursor: not-allowed
+}
+
+.center {
+    text-align: center
+}
+
+.regno {
+    padding: 14px;
+    background: #f0f4ff;
+    border-radius: 12px;
+    color: var(--blue);
+    font-weight: 800;
+    margin: 12px 0 24px
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 22px 0
+}
+
+[hidden] {
+    display: none !important
+}
+
+@media(max-width:480px) {
+    .hero {
+        padding-top: 8vh
+    }
+
+    .eyebrow {
+        margin-top: 58px
+    }
+
+    .actions .btn {
+        width: 100%
+    }
+
+    .card {
+        border-radius: 18px
+    }
+}
+
+.captcha-question {
+    display: inline-block;
+    margin: 8px 0;
+    padding: 10px 14px;
+    border-radius: 9px;
+    background: #eef2ff;
+    color: #2444bf;
+    font-weight: 800;
+    letter-spacing: .08em
+}
+
+.password-rule {
+    margin-top: 8px
+}
